@@ -29,7 +29,7 @@
     "tag": [
       "Abstract Algebra",
       "Group Theory",
-      "p-Groups, Nilpotent Groups and Solvable Groups"
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -39,8 +39,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Basic Definitions and Examples"
+      "Group Theory",
+      "p-Groups, Nilpotent Groups and Solvable Groups"
     ]
   },
   {
@@ -49,9 +49,9 @@
     "formal_statement": "import Mathlib\n\n/- Let $R$ be a ring with $1 \\neq 0$.\\nFor two elements $a,b \\in R$, if $1-ab$ is a unit,\nthen $1-ba$ is a unit. -/\ntheorem isUnit_one_sub_mul {R : Type} [Ring R] [Nontrivial R] {a b : R} (h : IsUnit (1 - a * b)) :\n    IsUnit (1 - b * a) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Other Topics",
-      "Algebraic Number Theory and Valuation Theory"
+      "Abstract Algebra",
+      "Ring Theory",
+      "Basic Definitions and Examples"
     ]
   },
   {
@@ -60,9 +60,9 @@
     "formal_statement": "import Mathlib\n\n/-- Show that a prime $p$ can be written as $p = a^2+ab+b^2$ with $a,b \\in \\mathbb{Z}$ if and only\nif $p=3$ or $p \\equiv 1 \\pmod 3$. -/\ntheorem exists_sum_two_squares_iff_mod_three_eq_one (p : ℕ) (hp : p.Prime) :\n    (∃ a b : ℤ, a ^ 2 + a * b + b ^ 2 = p) ↔ p = 3 ∨ p % 3 = 1 := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Abstract Algebra",
-      "Group Theory",
-      "Basic Axioms and Examples"
+      "Commutative Algebra",
+      "Other Topics",
+      "Algebraic Number Theory and Valuation Theory"
     ]
   },
   {
@@ -73,7 +73,7 @@
     "tag": [
       "Abstract Algebra",
       "Group Theory",
-      "Group Actions and Sylow theorems"
+      "Basic Axioms and Examples"
     ]
   },
   {
@@ -84,7 +84,7 @@
     "tag": [
       "Abstract Algebra",
       "Group Theory",
-      "Subgroups and Quotient groups"
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -95,7 +95,7 @@
     "tag": [
       "Abstract Algebra",
       "Group Theory",
-      "Group Actions and Sylow theorems"
+      "Basic Axioms and Examples"
     ]
   },
   {
@@ -104,9 +104,9 @@
     "formal_statement": "import Mathlib\n\n/- prove that the last two digits of $3^{3^{100}} is 03-/\ntheorem three_pow_three_pow_mod_100 : 3 ^ (3 ^ 100) % 100 = 3 := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
+      "Abstract Algebra",
       "Other Topics",
-      "Algebraic Number Theory and Valuation Theory"
+      "Elementary Number Theory"
     ]
   },
   {
@@ -116,8 +116,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Polynomials"
+      "Group Theory",
+      "Subgroups and Quotient groups"
     ]
   },
   {
@@ -127,8 +127,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Polynomials"
+      "Group Theory",
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -138,8 +138,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Polynomials"
+      "Group Theory",
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -149,8 +149,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Group Theory",
-      "Group Actions and Sylow theorems"
+      "Other Topics",
+      "Linear Algebra"
     ]
   },
   {
@@ -159,9 +159,9 @@
     "formal_statement": "import Mathlib\n\n/- Prove that the ring $\\mathbb{Z}[\\sqrt{-5}]$ is not a principal ideal domain. -/\ntheorem not_isPrincipalIdealRing_Zsqrtd_neg_five : ¬IsPrincipalIdealRing (Zsqrtd (-5)) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Abstract Algebra",
-      "Group Theory",
-      "p-Groups, Nilpotent Groups and Solvable Groups"
+      "Commutative Algebra",
+      "Other Topics",
+      "Algebraic Number Theory and Valuation Theory"
     ]
   },
   {
@@ -171,8 +171,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Group Theory",
-      "Group Actions and Sylow theorems"
+      "Ring Theory",
+      "Polynomials"
     ]
   },
   {
@@ -182,8 +182,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Group Theory",
-      "Subgroups and Quotient groups"
+      "Ring Theory",
+      "Polynomials"
     ]
   },
   {
@@ -205,7 +205,7 @@
     "tag": [
       "Abstract Algebra",
       "Group Theory",
-      "Subgroups and Quotient groups"
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -215,8 +215,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Other Topics",
-      "Linear Algebra"
+      "Group Theory",
+      "p-Groups, Nilpotent Groups and Solvable Groups"
     ]
   },
   {
@@ -226,8 +226,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Galois theory"
+      "Group Theory",
+      "Basic Axioms and Examples"
     ]
   },
   {
@@ -237,8 +237,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Explicit Computations"
+      "Group Theory",
+      "Basic Axioms and Examples"
     ]
   },
   {
@@ -248,8 +248,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Field Extensions"
+      "Group Theory",
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -259,8 +259,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Explicit Computations"
+      "Group Theory",
+      "Subgroups and Quotient groups"
     ]
   },
   {
@@ -270,8 +270,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Group Theory",
-      "Group Actions and Sylow theorems"
+      "Ring Theory",
+      "Polynomials"
     ]
   },
   {
@@ -281,8 +281,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Field Extensions"
+      "Group Theory",
+      "Subgroups and Quotient groups"
     ]
   },
   {
@@ -292,8 +292,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Explicit Computations"
+      "Other Topics",
+      "Linear Algebra"
     ]
   },
   {
@@ -304,7 +304,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Galois theory"
+      "Field Extensions"
     ]
   },
   {
@@ -337,7 +337,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Galois theory"
+      "Field Extensions"
     ]
   },
   {
@@ -348,7 +348,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Galois theory"
+      "Explicit Computations"
     ]
   },
   {
@@ -358,8 +358,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Galois theory"
+      "Group Theory",
+      "Group Actions and Sylow theorems"
     ]
   },
   {
@@ -370,7 +370,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Galois theory"
+      "Field Extensions"
     ]
   },
   {
@@ -380,8 +380,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Polynomials"
+      "Field Theory",
+      "Explicit Computations"
     ]
   },
   {
@@ -392,7 +392,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Explicit Computations"
+      "Galois theory"
     ]
   },
   {
@@ -403,7 +403,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Explicit Computations"
+      "Galois theory"
     ]
   },
   {
@@ -414,7 +414,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Explicit Computations"
+      "Galois theory"
     ]
   },
   {
@@ -424,8 +424,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Polynomials"
+      "Field Theory",
+      "Explicit Computations"
     ]
   },
   {
@@ -436,7 +436,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Field Extensions"
+      "Galois theory"
     ]
   },
   {
@@ -447,7 +447,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Field Extensions"
+      "Galois theory"
     ]
   },
   {
@@ -458,7 +458,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Explicit Computations"
+      "Galois theory"
     ]
   },
   {
@@ -469,7 +469,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Field Extensions"
+      "Galois theory"
     ]
   },
   {
@@ -480,7 +480,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Explicit Computations"
+      "Field Extensions"
     ]
   },
   {
@@ -490,8 +490,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Field Theory",
-      "Field Extensions"
+      "Ring Theory",
+      "Polynomials"
     ]
   },
   {
@@ -502,7 +502,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Field Extensions"
+      "Explicit Computations"
     ]
   },
   {
@@ -511,9 +511,9 @@
     "formal_statement": "import Mathlib\n\nopen Algebra\n\nopen scoped IntermediateField\n\n/-- Let $\\zeta$ be a primitive $9$-th root of unity in $\\mathbb{C}$, so $\\zeta^9 = 1$, and let\n$\\omega = \\zeta^3$ be a primitive $3$-rd root of unity, so $\\omega^3 = 1$. If $\\alpha^3 = 3$,\nshow that $\\alpha$ is not a cube in $\\mathbb{Q}(\\zeta)$. -/\ntheorem not_exists_eq_pow_three_of_pow_three_eq_three (α : ℂ) (hα : α ^ 3 = 3) (ζ : ℂ)\n    (hζ : IsPrimitiveRoot ζ 9) : ¬ ∃ β : ℚ⟮ζ⟯, α = β ^ 3 := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Abstract Algebra",
-      "Field Theory",
-      "Explicit Computations"
+      "Commutative Algebra",
+      "Other Topics",
+      "Algebraic Number Theory and Valuation Theory"
     ]
   },
   {
@@ -522,9 +522,9 @@
     "formal_statement": "import Mathlib\n\n/-- Prove that the cardinality $\\mathrm{Aut}(\\CC)$ (i.e. the group of field automorphism of $\\CC$)\nis infinite. -/\ntheorem infinite_complex_algEquiv : Infinite (ℂ ≃ₐ[ℚ] ℂ) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Other Topics",
-      "Algebraic Number Theory and Valuation Theory"
+      "Abstract Algebra",
+      "Field Theory",
+      "Explicit Computations"
     ]
   },
   {
@@ -535,7 +535,7 @@
     "tag": [
       "Abstract Algebra",
       "Field Theory",
-      "Galois theory"
+      "Explicit Computations"
     ]
   },
   {
@@ -567,8 +567,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Polynomials"
+      "Field Theory",
+      "Field Extensions"
     ]
   },
   {
@@ -588,9 +588,9 @@
     "formal_statement": "import Mathlib\n\nopen IntermediateField RatFunc\n\n/-- Let $\\mathbb{F}_4$ be the field with $4$ elements, $t$ a transcendental over $\\mathbb{F}_4$,\nand $F =\\mathbb{F}_4(t^4 + t)$ and $K =\\mathbb{F}_4(t)$. Show that $K$ is Galois over $F$. -/\ntheorem isGalois_galoisField_adjoin_X_pow_four_add_X :\n    IsGalois (GaloisField 2 2)⟮(X ^ 4 + X : RatFunc (GaloisField 2 2))⟯\n    (RatFunc (GaloisField 2 2)) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Ideals and Modules"
+      "Abstract Algebra",
+      "Field Theory",
+      "Field Extensions"
     ]
   },
   {
@@ -599,9 +599,9 @@
     "formal_statement": "import Mathlib\n\nopen IntermediateField\n\n/--\nLet $K$ be a field with $\\operatorname{char}(K) \\neq 2$. Consider a Galois extension $L/K$.\nShow that $\\operatorname{Gal}(L/K) \\cong (\\mathbb{Z}/2\\mathbb{Z})^2$ if and only if\nthe extensions $L/K$ has the form $L = K(\\sqrt{a}, \\sqrt{b})$ for $a, b \\in K^\\times$ such that\n$a$, $b$, and $a/b$ are nonsquares in $K^\\times$.\n-/\ntheorem exists_pow_two_eq_algebraMap_and_adjoin_eq_top {K L : Type} [Field K] [Field L]\n    [Algebra K L] [IsGalois K L] (hK : ¬ CharP K 2) : IsKleinFour (L ≃ₐ[K] L) ↔\n    ∃ a b : Kˣ, ∃ x y : L, x ^ 2 = algebraMap K L a.1 ∧ y ^ 2 = algebraMap K L b.1 ∧\n    K⟮x, y⟯ = ⊤ ∧ ¬IsSquare a ∧ ¬IsSquare b ∧ ¬IsSquare (a / b) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Localization and Decomposition of Ideals"
+      "Abstract Algebra",
+      "Field Theory",
+      "Explicit Computations"
     ]
   },
   {
@@ -610,9 +610,9 @@
     "formal_statement": "import Mathlib\n\nopen Polynomial\n\n/- Prove that for $n$ odd, $n>1$, $\\Phi_{2n}(x) = \\Phi_n(-x)$, where $\\Phi_n$ is the $n$th\ncyclotomic polynomial over \\mathbb{Q}.-/\ntheorem cyclotomic_two_mul_eq_cyclotomic_comp_neg {n : ℕ} (hn : Odd n) (hn' : 1 < n) :\n    Polynomial.cyclotomic (2 * n) ℚ = (Polynomial.cyclotomic n ℚ).comp (-X) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Other Topics",
-      "Algebraic Number Theory and Valuation Theory"
+      "Abstract Algebra",
+      "Field Theory",
+      "Field Extensions"
     ]
   },
   {
@@ -621,9 +621,9 @@
     "formal_statement": "import Mathlib\n\n/- If $F$ is a field that is not perfect, show that $F$ has a nontrivial purely inseparable\nextension.-/\ntheorem exists_isPurelyInseparable_and_bot_lt {F : Type} [Field F] (h : ¬ PerfectField F) :\n    ∃ E : IntermediateField F (AlgebraicClosure F), IsPurelyInseparable F E ∧ ⊥ < E := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Abstract Algebra",
+      "Field Theory",
+      "Field Extensions"
     ]
   },
   {
@@ -632,9 +632,9 @@
     "formal_statement": "import Mathlib\n\nopen IntermediateField\n/--Show that there is at most one extension \\( F(\\alpha) \\) of a field \\( F \\) such that \\( \\alpha^4\n\\in F \\), \\( \\alpha^2 \\notin F \\), and \\( F(\\alpha) = F(\\alpha^2) \\).-/\ntheorem exists_eq_adjoin_and_pow_four_mem_bot_and_not_pow_two_mem_bot (F : Type) [Field F] :\n    Subsingleton {M : IntermediateField F (AlgebraicClosure F) //\n    ∃ α : AlgebraicClosure F, M = F⟮α⟯ ∧ α ^ 4 ∈ (⊥ : IntermediateField F (AlgebraicClosure F)) ∧\n    ¬ α ^ 2 ∈ (⊥ : IntermediateField F (AlgebraicClosure F)) ∧ F⟮α⟯ = F⟮α ^ 2⟯} := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Abstract Algebra",
+      "Field Theory",
+      "Explicit Computations"
     ]
   },
   {
@@ -644,8 +644,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Ideal Theory",
-      "Tensor Product and Flatness"
+      "Other Topics",
+      "Algebraic Number Theory and Valuation Theory"
     ]
   },
   {
@@ -654,9 +654,9 @@
     "formal_statement": "import Mathlib\n\nopen Polynomial\n/--For a positive integer $a$, consider the polynomial $$ f_a = x^6 + 3ax^4 + 3x^3 + 3ax^2 + 1.\n $$ Let $F$ be the splitting field of $f_a$. Show that its Galois group is solvable.-/\ntheorem isSolvable_X_pow_six_add_gal {a : ℤ} (ha : a > 0) : IsSolvable\n    (X ^ 6 + C (3 * a : ℚ) * X ^ 4 + C 3 * X ^ 3 + C (3 * a : ℚ) * X ^ 2 + C 1 : ℚ[X]).Gal:= by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Abstract Algebra",
+      "Field Theory",
+      "Galois theory"
     ]
   },
   {
@@ -665,9 +665,9 @@
     "formal_statement": "import Mathlib\n\nopen Polynomial\n/--Prove that the polynomial $x^4+1$ is not irreducible over any field of positive characteristic.-/\ntheorem not_irreducible_X_pow_four_add_one {F : Type} [Field F] {p : ℕ} [Fact p.Prime]\n    [CharP F p] : ¬ Irreducible (X ^ 4 + C 1 : F[X]) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Localization and Decomposition of Ideals"
+      "Abstract Algebra",
+      "Ring Theory",
+      "Polynomials"
     ]
   },
   {
@@ -676,9 +676,9 @@
     "formal_statement": "import Mathlib\n\n/--\nLet $F$ be a field and let $f(x) \\in F[x]$ be an irreducible polynomial with splitting field $E$ over $F$.\nChoose $\\alpha \\in E$ with $f(\\alpha) =0$. Furthermore, for some fixed integer $n \\geq 1$,\nlet $g(x)$ be an irreducible polynomial in $F[x]$ with $g(\\alpha^n)=0$. If $\\deg(f) / \\deg(g) = n$\nand if the characteristic of $F$ does not divide $n$, prove that $E$ contains a primitive $n$th root of unity.-/\ntheorem primitiveRoots_not_empty (E F : Type) [Field E] [Field F] [Algebra F E]\n    (f : Polynomial F) (h_f_irr : Irreducible f) (h_splitting_field : f.IsSplittingField F E)\n    (a : E) (ha : f.aeval a = 0) (n : ℕ) (hn : n ≥ 1)\n    (g : Polynomial F) (h_g_irr : Irreducible g) (h_ga : g.aeval (a ^ n) = 0)\n    (h_deg : f.degree = g.degree * n) (h_char : (n : F) ≠ 0) : primitiveRoots n E ≠ ∅ := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Localization and Decomposition of Ideals"
+      "Abstract Algebra",
+      "Field Theory",
+      "Field Extensions"
     ]
   },
   {
@@ -687,9 +687,9 @@
     "formal_statement": "import Mathlib\n\nopen Polynomial\n/--Let \\( f \\in \\mathbb{Q}[X] \\) and \\( \\xi \\in \\mathbb{C} \\) be a root of unity. Show that \\( f(\\xi) \\neq 2^{\\frac{1}{4}} \\).-/\ntheorem eval₂_algebraMap_ne_two_pow_one_dvd_four {n : ℕ} (hn : 1 ≤ n) (f : ℚ[X]) (ξ : ℂˣ)\n    (h : ξ ∈ rootsOfUnity n ℂ) : f.eval₂ (algebraMap ℚ ℂ) ξ ≠ (2 : ℂ) ^ ((1 : ℂ) / 4) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Abstract Algebra",
+      "Field Theory",
+      "Galois theory"
     ]
   },
   {
@@ -698,9 +698,9 @@
     "formal_statement": "import Mathlib\n\nopen Polynomial\n/--Let $K$ be a finite extension of a field $F$, and let $f(x) \\in K[x]$. Prove that there exists a\nnonzero polynomial $g(x) \\in K[x]$ such that $f(x)g(x) \\in F[x]$.-/\ntheorem exists_mul_eq_map_algebraMap {F K : Type} [Field F] [Field K] [Algebra F K] [FiniteDimensional F K]\n    (f : K[X]) : ∃ g ≠ 0, ∃ h : F[X], f * g = h.map (algebraMap F K) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Abstract Algebra",
+      "Ring Theory",
+      "Polynomials"
     ]
   },
   {
@@ -710,8 +710,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "Basic Definitions and Examples"
+      "Field Theory",
+      "Galois theory"
     ]
   },
   {
@@ -721,8 +721,8 @@
     "source": "FATE-H",
     "tag": [
       "Abstract Algebra",
-      "Ring Theory",
-      "PID, ED and UFD"
+      "Field Theory",
+      "Field Extensions"
     ]
   },
   {
@@ -732,8 +732,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Other Topics",
-      "Completions and Hensel's lemma"
+      "Ideal Theory",
+      "Ideals and Modules"
     ]
   },
   {
@@ -744,7 +744,7 @@
     "tag": [
       "Commutative Algebra",
       "Ideal Theory",
-      "Ideals and Modules"
+      "Localization and Decomposition of Ideals"
     ]
   },
   {
@@ -754,8 +754,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Ideal Theory",
-      "Ideals and Modules"
+      "Other Topics",
+      "Algebraic Number Theory and Valuation Theory"
     ]
   },
   {
@@ -765,8 +765,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Regular Sequences and Regular Local Rings"
+      "Ideal Theory",
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -777,7 +777,7 @@
     "tag": [
       "Commutative Algebra",
       "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Dedekind Domains and DVRs"
     ]
   },
   {
@@ -787,8 +787,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Regular Sequences and Regular Local Rings"
+      "Ideal Theory",
+      "Noetherian rings and Chain Conditions"
     ]
   },
   {
@@ -799,7 +799,7 @@
     "tag": [
       "Commutative Algebra",
       "Ideal Theory",
-      "Dedekind Domains and DVRs"
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -810,7 +810,7 @@
     "tag": [
       "Commutative Algebra",
       "Ideal Theory",
-      "Dedekind Domains and DVRs"
+      "Tensor Product and Flatness"
     ]
   },
   {
@@ -820,8 +820,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Regular Sequences and Regular Local Rings"
+      "Ideal Theory",
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -832,7 +832,7 @@
     "tag": [
       "Commutative Algebra",
       "Ideal Theory",
-      "Integral Dependence and the Nullstellensatz"
+      "Localization and Decomposition of Ideals"
     ]
   },
   {
@@ -843,7 +843,7 @@
     "tag": [
       "Commutative Algebra",
       "Ideal Theory",
-      "Ideals and Modules"
+      "Localization and Decomposition of Ideals"
     ]
   },
   {
@@ -853,8 +853,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Regular Sequences and Regular Local Rings"
+      "Ideal Theory",
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -863,9 +863,9 @@
     "formal_statement": "import Mathlib\n\n/--Let \\( R \\) be a commutative ring. If all submodules of finitely generated free modules over\n\\( R \\) are free over \\( R \\), then \\( R \\) is a PID.-/\ntheorem isPrincipalIdealRing_of_forall_free {R : Type} [CommRing R]\n    (h : ∀ (M : Type) [AddCommGroup M] [Module R M] [Module.Finite R M] [Module.Free R M],\n      ∀ (N : Submodule R M), Module.Free R N) :\n    IsPrincipalIdealRing R := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Abstract Algebra",
-      "Other Topics",
-      "Linear Algebra"
+      "Commutative Algebra",
+      "Ideal Theory",
+      "Ideals and Modules"
     ]
   },
   {
@@ -875,8 +875,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -885,9 +885,9 @@
     "formal_statement": "import Mathlib\n\nopen MvPolynomial\n/--\nLet \\( R = \\mathbb{C}[x_1, \\dots, x_n]/(x_1^2 + x_2^2 + \\dots + x_n^2) \\).\n-/\nabbrev R (n : ℕ) : Type :=\n  MvPolynomial (Fin n) ℂ ⧸ Ideal.span {(∑ i : Fin n, X i ^ 2 : MvPolynomial (Fin n) ℂ)}\n\n/--\nLet \\( R = \\mathbb{C}[x_1, \\dots, x_n]/(x_1^2 + x_2^2 + \\dots + x_n^2) \\).\nThen \\( R \\) is not a unique factorization domain for \\( n = 3 \\) or \\( 4 \\).-/\ntheorem not_UFD_of_3_or_4 (n : ℕ) (h : n = 3 ∨ n = 4) [IsDomain (R n)] :\n    ¬ UniqueFactorizationMonoid (R n) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Abstract Algebra",
+      "Ring Theory",
+      "Basic Definitions and Examples"
     ]
   },
   {
@@ -896,9 +896,9 @@
     "formal_statement": "import Mathlib\n\n/--\nLet \\( D \\) be a unique factorization domain.\nProve that if every nonzero prime ideal of \\( D \\) is maximal, then \\( D \\) is a principal ideal domain.\n-/\ntheorem isPrincipalIdealRing_of_isPrime_ne_bot_isMaximal {D : Type} [CommRing D] [IsDomain D]\n    [UniqueFactorizationMonoid D] (h : ∀ P : Ideal D, [P.IsPrime] → P ≠ ⊥ → P.IsMaximal) : IsPrincipalIdealRing D := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Abstract Algebra",
+      "Ring Theory",
+      "PID, ED and UFD"
     ]
   },
   {
@@ -908,8 +908,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Tensor Product and Flatness"
     ]
   },
   {
@@ -919,8 +919,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Dedekind Domains and DVRs"
     ]
   },
   {
@@ -930,8 +930,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Other Topics",
+      "Completions and Hensel's lemma"
     ]
   },
   {
@@ -941,8 +941,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Ideals and Modules"
     ]
   },
   {
@@ -952,8 +952,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Ideals and Modules"
     ]
   },
   {
@@ -964,7 +964,7 @@
     "tag": [
       "Commutative Algebra",
       "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Regular Sequences and Regular Local Rings"
     ]
   },
   {
@@ -974,8 +974,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -986,7 +986,7 @@
     "tag": [
       "Commutative Algebra",
       "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Regular Sequences and Regular Local Rings"
     ]
   },
   {
@@ -1007,8 +1007,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Dedekind Domains and DVRs"
     ]
   },
   {
@@ -1018,8 +1018,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Dedekind Domains and DVRs"
     ]
   },
   {
@@ -1029,8 +1029,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Integral Dependence and the Nullstellensatz"
     ]
   },
   {
@@ -1041,7 +1041,7 @@
     "tag": [
       "Commutative Algebra",
       "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Regular Sequences and Regular Local Rings"
     ]
   },
   {
@@ -1051,8 +1051,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Dimension Theory and Smoothness",
-      "Heights and Dimensions"
+      "Ideal Theory",
+      "Ideals and Modules"
     ]
   },
   {
@@ -1061,9 +1061,9 @@
     "formal_statement": "import Mathlib\n\nopen Real\n\n/- Prove that $\\sin 1^{\\circ}$ is algebraic over $\\mathbb{Q}$.-/\ntheorem isAlgebraic_sin_pi_div_180 : IsAlgebraic ℚ (sin (π / 180)) := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Tensor Product and Flatness"
+      "Abstract Algebra",
+      "Field Theory",
+      "Explicit Computations"
     ]
   },
   {
@@ -1073,8 +1073,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Ideal Theory",
-      "Tensor Product and Flatness"
+      "Dimension Theory and Smoothness",
+      "Regular Sequences and Regular Local Rings"
     ]
   },
   {
@@ -1083,9 +1083,9 @@
     "formal_statement": "import Mathlib\n\n/--\nFor a commutative ring \\(R\\) and \\(n \\in \\mathbb{N}\\) such that \\(2\\) is invertible in \\(R\\).\nIf \\(A \\in SO(2n + 1,  R)\\), then \\(det(I - A) = 0\\).-/\ntheorem determinant_eq_zero (R : Type) [CommRing R] (n : ℕ) (h2_inv : IsUnit (2 : R))\n    (A : Matrix.specialOrthogonalGroup (Fin (2 * n + 1)) R) : (1 - A.1).det = 0 := by\n  sorry",
     "source": "FATE-H",
     "tag": [
-      "Commutative Algebra",
-      "Ideal Theory",
-      "Tensor Product and Flatness"
+      "Abstract Algebra",
+      "Other Topics",
+      "Linear Algebra"
     ]
   },
   {
@@ -1095,8 +1095,8 @@
     "source": "FATE-H",
     "tag": [
       "Commutative Algebra",
-      "Ideal Theory",
-      "Tensor Product and Flatness"
+      "Dimension Theory and Smoothness",
+      "Heights and Dimensions"
     ]
   }
 ]
